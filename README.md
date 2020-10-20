@@ -7,6 +7,9 @@ Example use in a SCRIPT placed in SERVERSCRIPTSERVICE:
 
 local HttpService = game:GetService("HttpService")
 -- If you want to grab auto updating source I suggest you use loadstring or an other alternative like LBI
+
+
+
 local AdminModule = loadstring(HttpService:GetAsync("https://raw.githubusercontent.com/bob5918/projectbobsource/master/CommhandHandler.lua"))()
 
 
