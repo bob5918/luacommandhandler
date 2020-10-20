@@ -60,15 +60,13 @@ function Commands:Execute(player, message)
 	
 end
 
-function Commands:AddCmd(cmdname, desc)
+function Commands:AddCmd(cmdname, desc, func)
 	
 	
 		Commandslist[cmdname] = {
 		["Desc"] = "Added Command. "..desc,
 		["Aliases"] = {},
-	    ["Exe"] = function(player, message)
-				player:Kick("You tested it out!")
-			end
+	    ["Exe"] = func
 	}
 	return true
 end
